@@ -3,7 +3,7 @@ class Player
 {
 public:
 	Player(); // bruger bare standardværdier indtil videre
-	~Player();
+
 	void update();
 	void playerMove(char input); //skal den være her, eller i level?
 private:

@@ -6,11 +6,6 @@ Player::Player() : attack_(10), defense_(10), health_(250), healthRegen_(2), exp
 {
 }
 
-
-Player::~Player()
-{
-}
-
 void Player::update()
 {
 	if (experience_ < level_ * 50)
