@@ -1,0 +1,37 @@
+Features:
+1. Load the ASCII levels from a level file (level1.txt, level2.txt)
+
+2. Allow player movement using wasd ( getch() )
+
+3. Have some enemies that randomly move around, and allow the player to attack them (random engine) / (check for player)
+
+4. Make sure the player cannot walk through walls
+
+Extra
+
+5. Make the player able to save the game and load the game
+
+6. Add items and money to the game, along with an item shop
+
+7. Allow the player to level up when enough experience has been recieved
+
+8. Have multiple levels
+
+
+Hints:
+1. Store your game level in a vector of strings. Each string is a row in your level. You can treat this vector of strings as a 2D array. For instance,
+
+vector <string> levelData;
+
+and if you want to get the object at 3,3 you call
+
+char object = levelData[3][3];
+
+2. Whenever your player or a monster wants to move ina direction, first check to see what char is on the board in that direction, and use a switch statement to evaluate what should happen.
+
+3. Use an ifstream and the getline function to load your level from a .txt file. Load one row at a time and put them in a string, then push back each string to your vector.
+
+4. Surround your levels with walls '#' so that the player cannot try to walk off the edge.
+
+5. Create a Monster class and store the monsters in a vector <Monster> monsters;
+   Then, each time you loop through the main game loop, you can loop through this monsters array and randomly move each one. You can also check to see if the player is nearby.
