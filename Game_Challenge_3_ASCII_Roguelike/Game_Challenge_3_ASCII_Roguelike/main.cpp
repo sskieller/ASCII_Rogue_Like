@@ -10,10 +10,10 @@ using namespace std;
 
 int main()
 {
-	Level level1;
-	level1.loadLevel();
-	level1.printLevel();
-	//level1.saveLevel();
+	Level level;
+	level.loadLevel("Level1.txt");
+	level.printLevel();
+	level.saveLevel("Level2.txt");
 
 
 	system("PAUSE");

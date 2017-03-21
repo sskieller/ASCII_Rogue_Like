@@ -11,9 +11,9 @@ class Level
 public:
 	Level();
 
-	void loadLevel();
+	void loadLevel(string levelName);
 	void clearLevel();
-	void saveLevel();
+	void saveLevel(string levelName);
 	void printLevel();
 
 private:
