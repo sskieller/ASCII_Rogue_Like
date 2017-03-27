@@ -6,6 +6,12 @@ Player::Player() : attack_(10), defense_(10), health_(250), healthRegen_(2), exp
 {
 }
 
+void Player::initPlayer(int y, int x)
+{
+	y_ = y;
+	x_ = x;
+}
+
 void Player::update()
 {
 	if (experience_ < level_ * 50)

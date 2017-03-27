@@ -12,10 +12,8 @@ using namespace std;
 int main()
 {
 	GameManager gameManager;
-
+	gameManager.initGame();
 	gameManager.playGame();
 
-
-	system("PAUSE");
 	return 0;
 }
