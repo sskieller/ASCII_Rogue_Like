@@ -10,7 +10,7 @@ GameManager::GameManager()
 void GameManager::initGame()
 {
 	level.loadLevel("Level1.txt");
-	level.processLevel(player1);
+	level.processLevel(player1, monster1);
 	level.printLevel();
 }
 
@@ -23,6 +23,7 @@ void GameManager::playGame()
 	{
 		input = _getch();
 		level.processPlayerMove(input, player1);
+		level.processMonsterMove(monster1, player1);
 		level.printLevel();
 	} while (input != 'p' && input != 'P');
 	return;
